@@ -1,5 +1,7 @@
 package projet1;
 
+ 
+
 import java.util.Scanner;
 
 public class sdz1 {
@@ -12,7 +14,7 @@ public class sdz1 {
 		System.out.println("Bienvenue");
 		Scanner reponse1 = new Scanner(System.in);
 		char reponse = 'O';
-		while (reponse == 'O')
+		while (reponse == 'O' | reponse =='o')
 		{
 			
 		System.out.println("Choisir le mode de conversion");
@@ -39,9 +41,14 @@ public class sdz1 {
 			reponse = reponse1.nextLine().charAt(0);
 		}
 		}
-		if (reponse == 'N'){
-			System.out.println("Aurevoir");
+		if (reponse == 'N' | reponse =='n'){
+			System.out.println("Au revoir");
 		}
-	}
+
+		{
+			
+		}
 
 }
+}
+
