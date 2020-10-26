@@ -1,18 +1,15 @@
 package projet1;
 
 import java.util.Scanner;
-
 public class sdz1 {
-
 	private static Scanner sc;
-
 	public static void main(String[] args) {
 		double Celsius;
 		double Fahrenheit;
 		System.out.println("Bienvenue");
 		Scanner reponse1 = new Scanner(System.in);
 		char reponse = 'O';
-		while (reponse == 'O')
+		while (reponse == 'O' | reponse =='o')
 		{
 			
 		System.out.println("Choisir le mode de conversion");
@@ -38,10 +35,11 @@ public class sdz1 {
 			System.out.println("Tu veux faire un autre conversion ? O/N");
 			reponse = reponse1.nextLine().charAt(0);
 		}
+		
+		if (reponse == 'N' | reponse =='n'){
+			System.out.println("Au revoir");
 		}
-		if (reponse == 'N'){
-			System.out.println("Aurevoir");
-		}
-	}
 
+}
+}
 }
